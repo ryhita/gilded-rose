@@ -19,7 +19,7 @@ public class GildedRoseTest {
     @Test
     public void updateQualityItemsTest() {
         gildedRose.updateQualityItems();
-        assertEquals(2, gildedRose.items[0].quality);
+        assertEquals(0, gildedRose.items[0].quality);
 	    assertEquals(80, gildedRose.items[1].quality);
 	    assertEquals(14, gildedRose.items[2].sellIn);
 	    assertEquals(50, gildedRose.items[3].quality);
