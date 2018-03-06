@@ -21,7 +21,7 @@ class GildedRose {
     }
 
     private boolean hasExpired(Item item) {
-        return items[i].sellIn < 0
+        return items[i].sellIn < 0;
     }
 
     private void updateExpired(Item item) {
@@ -62,7 +62,7 @@ class GildedRose {
 
     private void updateAgeBrieOrConcert(item) {
         if (item.quality < 50) {
-           item.quality = item.quality + 1;
+            item.quality = item.quality + 1;
 
             if (item.name.equals("Backstage passes to a TAFKAL80ETC concert")) {
                 if (item.sellIn < 11) {
