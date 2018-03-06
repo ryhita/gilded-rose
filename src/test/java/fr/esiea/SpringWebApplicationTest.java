@@ -28,5 +28,16 @@ public class SpringWebApplicationTest {
         app.db.clear();
     }
 
+      @Test
+    public void list_items(){
+        String str = app.listItems().toString();
+        assertEquals("[]", str);
+    }
+    
+    @Test
+    public void buy_wrong_item(){
+        String str = app.buyItem("Test", 10);
+        assertEquals("Erreur, cet item n'existe pas", str);
+    }
    
 }
