@@ -27,6 +27,7 @@ public class ItemTest {
      		new BackstagePassesItem("Backstage passes to a TAFKAL80ETC concert",10,20),
     		new BackstagePassesItem("Backstage passes to a TAFKAL80ETC concert",5,10),
      		new BackstagePassesItem("Backstage passes to a TAFKAL80ETC concert",-2,5),
+     		new SulfurasItem("Sulfuras",0,80),
      		new ConjuredItem("Conjured",-4,2)};
      	for(int i=0;i<5;i++)
      		items[i].updateQuality();
@@ -34,7 +35,8 @@ public class ItemTest {
     	assertEquals(22, items[1].quality);
    		assertEquals(13, items[2].quality);
     	assertEquals(0, items[3].quality);
-    	assertEquals(0, items[4].quality);
+    	assertEquals(0, items[4].sellIn);
+    	assertEquals(0, items[5].quality);
     }
     
 }
