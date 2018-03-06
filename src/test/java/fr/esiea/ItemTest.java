@@ -35,7 +35,7 @@ public class ItemTest {
     	assertEquals(22, items[1].quality);
    		assertEquals(13, items[2].quality);
     	assertEquals(0, items[3].quality);
-    	assertEquals(0, items[4].sellIn);
+    	assertEquals(2, items[4].sellIn);
     	assertEquals(0, items[5].quality);
     }
     

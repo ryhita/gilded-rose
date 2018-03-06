@@ -16,6 +16,7 @@ public class BackstagePassesItem extends Item {
 			if(this.quality < MAX_QUALITY)
 				quality ++;
 		}
+		
 		if(this.sellIn < 6)
 			if(this.quality < MAX_QUALITY)
 				quality ++;
