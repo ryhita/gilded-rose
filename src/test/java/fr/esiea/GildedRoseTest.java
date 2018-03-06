@@ -24,7 +24,7 @@ public class GildedRoseTest {
 	    assertEquals(14, gildedRose.items[2].sellIn);
 	    assertEquals(50, gildedRose.items[3].quality);
 	    assertEquals(50, gildedRose.items[4].quality);
-	    assertEquals(2, gildedRose.items[5].quality);
+	    assertEquals(0, gildedRose.items[5].quality);
     }
 
 }
